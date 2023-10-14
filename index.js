@@ -105,17 +105,19 @@ let categories = [
         course: ' DIZAYN',
         count: 0
     },
-    {       
+    {
         course: '   BACKEND',
         count: 0
     },
 ]
 for (let cour of categories) {
-    cour.names=[]
+    cour.names = []
 
-for (let uch of arr){  
-    if(uch.info.faculity.toLowerCase()===cour.course.toLowerCase().trim())
-    {cour.names.push(uch.name) 
-    cour.count++}
-}}
+    for (let uch of arr) {
+        if (uch.info.faculity.toLowerCase() === cour.course.toLowerCase().trim()) {
+            cour.names.push(uch.name)
+            cour.count++
+        }
+    }
+}
 console.log(categories)
